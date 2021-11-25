@@ -1,0 +1,94 @@
+
+body{
+font-family: sans-serif;
+background-color: rgb(201, 235, 241);
+  }
+.topnav{
+    background-color: rgb(201, 235, 241);
+    overflow: hidden;
+  }
+.topnav a{
+    float: left;
+    color:rgb(126, 9, 126);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  } 
+.topnav a:hover{
+    background-color:rgb(126, 9, 126);
+    color: rgb(255, 255, 255);
+  }
+div.a{
+    text-align: center;
+    color:rgb(126, 9, 126);
+  }
+.animate__animated{
+  animation-iteration-count: infinite;
+  }
+h1{
+    text-align: center;
+    color:rgb(126, 9, 126);
+    font-family:'Outfit', sans-serif;;
+  }
+h2{
+    text-align: center;
+    color:rgb(126, 9, 126);
+  }
+/*Row påverkar hela objektet/elementet, medans column påverkar dem specifika columnerna.*/
+  .row{
+    display: flex;
+  }
+.column{ 
+    flex: 33%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+li{
+    color:rgb(126, 9, 126);
+    font-weight: bold;
+    list-style-type:none;
+    margin-bottom: 20px;
+  }
+.sallad{
+    width: 225px;
+    border-radius: 8px;
+    /*Display: block gör att det blir centrerad tillsammans med margin left-right auto.*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.dricka{
+    width: 160px;
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.kebab1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+  }
+.kebab3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    /*50% av skärmens storlek.*/
+    width: 50%
+  }
+footer{
+    text-align: center;
+    background-color: rgb(201, 235, 241);
+    color: rgb(126, 9, 126);
+   
+  }
+
+
+   @media only screen and (max-width:600px){
+    .row {
+      flex-direction: column;
+    }
+  }
